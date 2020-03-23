@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The lib</title>
+    <meta name="description" content="The lib">
+    <meta name="author" content="Andreas H">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body onload="requestNewKey()">
+    <div id=wrapper>
+        <h2>The Great book library</h2>
+        <input type="text" id="search_bar" onkeyup="Search()" placeholder="Title to search for..."
+            title="Search for book">
+        <div id="keyzone">
+            <p id="result">Current Key:</p>
+            <button onclick="requestNewKey()">GetNew</button>
+        </div>
+        <div id="bookShelf">
+            <button id="showform" onclick="showAddForm()">toggle Add Form</button>
+            <div id=formContainer>
+                <form id=addbooksform>
+                    <label for="title">Title:</label><br>
+                    <input type="text" id="book_title" name="title" value="Sagan om ringen"><br>
+                    <label for="author">author:</label><br>
+                    <input type="text" id="book_author" name="author" value="Tolkien"><br><br>
+                    <input type="button" value="Add" onclick="addBookRequest()">
+                </form>
+            </div>
+            <table id="List">
+                <tr>
+                    <th>Title</th>
+                    <th>author</th>
+                </tr>
+            </table>
+            <button onclick="requestData()">Refresh</button>
+        </div>
+    </div>
+
+</body>
+<script src="js/search.js"></script>
+<script src="js/ServerHandler.js"></script>
+<script src="js/showFrom.js"></script>
+
+
+</html>

@@ -1,0 +1,60 @@
+#wrapper{
+    width: 70%;
+    position:relative;
+    margin: auto;
+}
+h2{
+    margin: auto;
+    text-align: center;
+}
+#search_bar{
+    margin:0 auto;
+    display: block;
+    width: 70%;
+    height: 2rem;
+    border-radius: 10px;
+}
+#bookShelf{
+    width: 70%;
+    margin:0 auto;
+    display: block;
+}
+#formContainer{
+    display: none;
+}
+#List {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  tr:hover td{
+      background-color: gray;   
+      /*display: inline-block;*/
+  }
+  tr:hover button{ 
+    background-color: rgb(57, 2, 2);
+}
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+  }
+  #List button{ 
+      background-color: rgb(255, 111, 111);
+      border-radius: 5px;
+      float: right;
+      width: 50%;
+      display: block;
+  }
+#keyzone{
+    width: 100%;
+    display: block;
+    float: left;
+    text-align: center;
+  }
+  #keyzone *{
+      display: inline;
+  }
+#addbooksform{
+    width: 70%;
+    display: block;
+
+}
