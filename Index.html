@@ -26,9 +26,9 @@
             <button id="showform" onclick="showAddForm()">toggle Add Form</button>
             <div id=formContainer>
                 <form id=addbooksform>
-                    <label for="title">Title:</label><br>
+                    <label>Title:</label><br>
                     <input type="text" id="book_title" name="title" value="Sagan om ringen"><br>
-                    <label for="author">author:</label><br>
+                    <label>author:</label><br>
                     <input type="text" id="book_author" name="author" value="Tolkien"><br><br>
                     <input type="button" value="Add" onclick="addBookRequest()">
                 </form>
@@ -42,11 +42,9 @@
             <button onclick="requestData()">Refresh</button>
         </div>
     </div>
-
-</body>
+    
 <script src="js/search.js"></script>
 <script src="js/ServerHandler.js"></script>
 <script src="js/showFrom.js"></script>
-
-
+</body>
 </html>
